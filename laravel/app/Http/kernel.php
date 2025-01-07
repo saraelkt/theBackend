@@ -20,6 +20,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\CorsMiddleware::class,
+        \App\Http\Middleware\HandleCors::class,
     ];
 
     /**
@@ -41,6 +42,7 @@ class Kernel extends HttpKernel
         \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
         'throttle:api',
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        \Illuminate\Http\Middleware\HandleCors::class, // Middleware CORS pour l'API
     ],
     ];
 

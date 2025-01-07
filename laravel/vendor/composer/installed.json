@@ -1778,17 +1778,17 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v4.0.7",
-            "version_normalized": "4.0.7.0",
+            "version": "v4.0.0",
+            "version_normalized": "4.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "698064236a46df016e64a7eb059b1414e0b281df"
+                "reference": "9e6e561308cace166de9ceae4ced820309fa8e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/698064236a46df016e64a7eb059b1414e0b281df",
-                "reference": "698064236a46df016e64a7eb059b1414e0b281df",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/9e6e561308cace166de9ceae4ced820309fa8e13",
+                "reference": "9e6e561308cace166de9ceae4ced820309fa8e13",
                 "shasum": ""
             },
             "require": {
@@ -1797,8 +1797,7 @@
                 "illuminate/contracts": "^11.0",
                 "illuminate/database": "^11.0",
                 "illuminate/support": "^11.0",
-                "php": "^8.2",
-                "symfony/console": "^7.0"
+                "php": "^8.2"
             },
             "require-dev": {
                 "mockery/mockery": "^1.6",
@@ -1806,7 +1805,7 @@
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.5"
             },
-            "time": "2024-12-11T16:40:21+00:00",
+            "time": "2024-03-12T14:07:05+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
