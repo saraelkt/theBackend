@@ -12,7 +12,8 @@ Route::post('/comments', [CommentController::class, 'store']);
 Route::match(['GET', 'POST'], '/register', [AuthController::class, 'register']);
  // Inscription
 Route::post('/login', [AuthController::class, 'login'])->name('login'); // Connexion
-Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index'); 
+
+
 // Routes protégées par Sanctum
 Route::options('{any}', function () {
     return response()->json([], 204);
@@ -20,7 +21,9 @@ Route::options('{any}', function () {
 Route::middleware(['auth:sanctum'])->group(function () {
     // Gestion des articles
    // Liste des articles
-    Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store'); // Création d'un article
+   // Création d'un article
+   Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store'); 
+   Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index'); 
     Route::get('/articles/{id}', [ArticleController::class, 'show'])->name('articles.show'); // Afficher un article spécifique
     Route::put('/articles/{id}', [ArticleController::class, 'update'])->name('articles.update'); // Mise à jour d'un article
     Route::delete('/articles/{id}', [ArticleController::class, 'destroy'])->name('articles.destroy'); // Suppression d'un article
