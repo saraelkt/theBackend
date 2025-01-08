@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
 
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
+Route::post('/comments', [CommentController::class, 'store']);
 // Routes publiques
 Route::match(['GET', 'POST'], '/register', [AuthController::class, 'register']);
  // Inscription

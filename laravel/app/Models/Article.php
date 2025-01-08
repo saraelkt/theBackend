@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
 class Article extends Model
 {
     use HasFactory;
@@ -11,10 +12,15 @@ class Article extends Model
     protected $fillable = [
         'title',
         'content',
-        'category',
         'image_path',
-        'author',         // Nouvelle colonne
-        'published_at', 
-        
+        'likes',
+        'comments_count',
+        'published_at',
+        'user_id', // Champ lié à l'utilisateur
     ];
+
+    // Relation : un article appartient à un utilisateur
+    public function user() {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
