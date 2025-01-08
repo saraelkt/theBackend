@@ -25,6 +25,8 @@ class ArticleController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:255',
+            'author' => 'required|max:255',
+            'published_at'=>'required',
             'content' => 'required',
             'category' => 'required',
             'image_path' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
