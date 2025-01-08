@@ -10,7 +10,11 @@ class ArticleController extends Controller
     */
    public function index()
    {
-       $articles = Article::all(); // Récupère tous les articles
+       $articles = Article::all();
+       $articles->map(function ($article) {
+        $article->image_url = url('storage/' . $article->image_path);
+        return $article;
+    }); // Récupère tous les articles
        return response()->json($articles, 200); // Retourne les articles en JSON
    }
 
@@ -24,8 +28,11 @@ class ArticleController extends Controller
            'title' => 'required|max:255',
            'content' => 'required',
            'category' => 'required',
-           'image_path' => 'nullable|image|mimes:jpeg,png,jpg|max:2048', // Image facultative
+           'image_path' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+           'author' => 'nullable|string|max:255',
+            'published_at' => 'nullable|date', // Image facultative
        ]);
+       $imagePath = $request->file('image')->store('images', 'public');
 
        // Gérer l'upload de l'image si elle existe
        if ($request->hasFile('image_path')) {
@@ -69,6 +76,8 @@ class ArticleController extends Controller
            'content' => 'sometimes|required',
            'category' => 'sometimes|required',
            'image_path' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+           'author' => 'nullable|string|max:255',
+        'published_at' => 'nullable|date',
        ]);
 
        // Gérer l'upload de l'image si elle existe

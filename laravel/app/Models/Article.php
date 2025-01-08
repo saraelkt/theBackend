@@ -13,5 +13,8 @@ class Article extends Model
         'content',
         'category',
         'image_path',
+        'author',         // Nouvelle colonne
+        'published_at', 
+        
     ];
 }
