@@ -48,16 +48,16 @@ class ArticleController extends Controller
    /**
     * Affiche un article spécifique.
     */
-   public function show($id)
-   {
-       $article = Article::find($id); // Trouve l'article par ID
-
-       if (!$article) {
-           return response()->json(['message' => 'Article not found'], 404); // Erreur si l'article n'existe pas
-       }
-
-       return response()->json($article, 200); // Retourne l'article
-   }
+    public function show($id)
+    {
+        $article = Article::with('user')->find($id);
+    
+        if (!$article) {
+            return response()->json(['message' => 'Article not found'], 404);
+        }
+    
+        return response()->json($article, 200);
+    }    
 
    /**
     * Met à jour un article.
