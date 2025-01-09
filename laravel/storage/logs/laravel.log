@@ -13680,3 +13680,7 @@
 #37 D:\\Users\\Hp\\Desktop\\theBackend\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Users\\\\Hp\\\\Des...')
 #38 {main}
 "} 
+[2025-01-09 21:59:52] local.INFO: Received data: {"content":"jjjjj","parent_id":null} 
+[2025-01-09 21:59:52] local.ERROR: Validation errors: {"article_id":["The article id field is required."]} 
+[2025-01-09 22:17:49] local.INFO: Received data: {"article_id":3,"content":"bismilah","parent_id":null} 
+[2025-01-09 22:19:27] local.INFO: Received data: {"article_id":13,"content":"hiiiiiiii","parent_id":null} 
