@@ -40,9 +40,9 @@ class Kernel extends HttpKernel
 
        'api' => [
         \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-        'throttle:api',
-        \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        \Illuminate\Http\Middleware\HandleCors::class, // Middleware CORS pour l'API
+    'throttle:api',
+    \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    \Illuminate\Http\Middleware\HandleCors::class, // Ajout du middleware CORS
     ],
     ];
 
@@ -63,5 +63,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'cors' => \App\Http\Middleware\CorsMiddleware::class,
     ];
 }

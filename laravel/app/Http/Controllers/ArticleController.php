@@ -23,22 +23,32 @@ class ArticleController extends Controller
     */
     public function store(Request $request)
     {
+        
         $validatedData = $request->validate([
-            'title' => 'required|max:255',
-            'author' => 'required|max:255',
-            'published_at'=>'required',
-            'content' => 'required',
-            'category' => 'required',
+            
+            'title' => 'required|max:255|nullable',
+            
+            'published_at'=>'required|nullable',
+            'content' => 'required|nullable',
+            'category' => 'required|nullable',
             'image_path' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
         ]);
+        $validatedData['user_id'] = auth()->id();
+        $user = auth()->user();
+        if ($user) {
+            $validatedData['author'] = $user->name; // Remplit automatiquement le champ `author`
+        }
+       
     
         if ($request->hasFile('image_path')) {
             $validatedData['image_path'] = $request->file('image_path')->store('articles', 'public');
         }
+        
     
         $article = Article::create($validatedData);
     
         return response()->json($article, 201);
+       
     }
     
 

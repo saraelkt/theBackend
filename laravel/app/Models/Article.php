@@ -12,8 +12,10 @@ class Article extends Model
     protected $fillable = [
         'title',
         'content',
+        'author',
         'image_path',
         'likes',
+        'category',
         'comments_count',
         'published_at',
         'user_id', // Champ lié à l'utilisateur
