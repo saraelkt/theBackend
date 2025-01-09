@@ -21,6 +21,6 @@ class Article extends Model
 
     // Relation : un article appartient à un utilisateur
     public function user() {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class);
     }
 }
