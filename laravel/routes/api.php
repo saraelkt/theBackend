@@ -4,6 +4,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\UserController;
+
+Route::get('/user/{id}/profile-with-articles', [UserController::class, 'getProfileWithArticles']);
 
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
@@ -29,9 +32,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('/articles/{id}', [ArticleController::class, 'destroy'])->name('articles.destroy'); // Suppression d'un article
 
     // Récupération des informations de l'utilisateur connecté
-    Route::get('/user', function (Request $request) {
+    Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
         return $request->user();
-    })->name('user.profile');
+    });    
 
     // Déconnexion
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
