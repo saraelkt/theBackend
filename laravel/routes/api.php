@@ -7,6 +7,8 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\UserController;
 
 Route::get('/user/{id}/profile-with-articles', [UserController::class, 'getProfileWithArticles']);
+Route::put('/user/{id}/update-profile', [UserController::class, 'updateProfile']);
+Route::post('/user/{id}/update-profile-image', [UserController::class, 'updateProfileImage'])->name('user.updateProfileImage');
 
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
