@@ -57,14 +57,20 @@ class ArticleController extends Controller
     */
     public function show($id)
     {
+        \Log::info('Requête show reçue pour l\'article :', ['id' => $id, 'user' => auth()->user()]);
+    
         $article = Article::with('user')->find($id);
     
         if (!$article) {
+            \Log::error('Article non trouvé :', ['id' => $id]);
             return response()->json(['message' => 'Article not found'], 404);
         }
     
+        \Log::info('Article trouvé :', ['article' => $article]);
+    
         return response()->json($article, 200);
-    }    
+    }
+      
 
    /**
     * Met à jour un article.

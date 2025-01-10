@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CommentController;
 
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout'])->name('logout');
-Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
+
 
 // Routes publiques
 Route::match(['GET', 'POST'], '/register', [AuthController::class, 'register']);
@@ -20,10 +20,8 @@ Route::options('{any}', function () {
     return response()->json([], 204);
 })->where('any', '.*');
 Route::middleware(['auth:sanctum'])->group(function () {
-    // Gestion des articles
-   // Liste des articles
-   // Création d'un article
-   Route::get('/articles/{articleId}/comments', [CommentController::class, 'index']); // Récupérer les commentaires
+    
+    Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
     Route::post('/comments', [CommentController::class, 'store']); // Créer un commentaire
 
 Route::get('/user/{id}/profile-with-articles', [UserController::class, 'getProfileWithArticles']);

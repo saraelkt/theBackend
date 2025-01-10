@@ -9,14 +9,19 @@ class CommentController extends Controller
 {
     public function index($articleId)
     {
+        \Log::info('Headers reçus :', request()->headers->all());
+        \Log::info('Utilisateur authentifié :', ['user' => auth()->user()]);
+    
         $comments = Comment::where('article_id', $articleId)
-            ->whereNull('parent_id') // Seulement les commentaires principaux
-            ->with('replies.user') // Charger les réponses avec leurs utilisateurs
-            ->orderBy('created_at', 'desc') // Trier par date
+            ->whereNull('parent_id')
+            ->with('replies.user')
+            ->orderBy('created_at', 'desc')
             ->get();
     
         return response()->json($comments);
     }
+    
+
     
 
     public function store(Request $request)
@@ -43,10 +48,10 @@ class CommentController extends Controller
 }
 
 
-    public function getComments($articleId) {
-        $comments = Comment::where('article_id', $articleId)->get();
-        return response()->json($comments);
-    }
+    // public function getComments($articleId) {
+    //     $comments = Comment::where('article_id', $articleId)->get();
+    //     return response()->json($comments);
+    // }
     
     
 }    
