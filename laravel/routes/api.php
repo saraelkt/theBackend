@@ -43,4 +43,5 @@ Route::post('/user/{id}/update-profile-image', [UserController::class, 'updatePr
 
     // Déconnexion
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::post('/comments/{commentId}/like', [CommentController::class, 'toggleLike']);
 });
