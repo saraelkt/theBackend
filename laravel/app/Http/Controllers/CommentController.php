@@ -8,19 +8,19 @@ use Illuminate\Http\Request;
 class CommentController extends Controller
 {
     public function index($articleId)
-    {
-        \Log::info('Headers reçus :', request()->headers->all());
-        \Log::info('Utilisateur authentifié :', ['user' => auth()->user()]);
-    
-        $comments = Comment::where('article_id', $articleId)
-            ->whereNull('parent_id')
-            ->with('replies.user')
-            ->orderBy('created_at', 'desc')
-            ->get();
-    
-        return response()->json($comments);
-    }
-    
+{
+    $comments = Comment::where('article_id', $articleId)
+        ->whereNull('parent_id')
+        ->with(['user', 'replies.user']) 
+        ->orderBy('created_at', 'desc')
+        ->get()
+        ->map(function ($comment) {
+            $comment->replies = $comment->replies ?? []; // Assurez-vous que replies est un tableau
+            return $comment;
+        });
+
+    return response()->json($comments);
+}
 
     
 
@@ -37,6 +37,8 @@ class CommentController extends Controller
         $validatedData['user_id'] = auth()->id();
 
         $comment = Comment::create($validatedData);
+        $comment->load('user');
+        
 
         return response()->json($comment, 201);
     } catch (\Illuminate\Validation\ValidationException $e) {
