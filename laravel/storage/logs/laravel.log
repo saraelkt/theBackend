@@ -14935,3 +14935,45 @@ Anxiety is not just a personal struggle; it is also a societal challenge. The st
 Whether through therapy, medication, or lifestyle changes, addressing anxiety is an ongoing process that requires patience and resilience. It is important to celebrate small victories and recognize the strength it takes to confront and manage anxiety. With determination and support, it is possible to lead a life that is not controlled by fear but guided by hope and understanding.","category":"Anxiety","image_path":"img2.png","created_at":null,"updated_at":null,"author":"Safae Nagbi","published_at":"2025-01-08 00:00:00","likes":0,"comments_count":0,"user_id":3,"user":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}}} 
 [2025-01-10 14:18:46] local.INFO: Headers reçus : {"host":["127.0.0.1:8000"],"connection":["keep-alive"],"sec-ch-ua-platform":["\"Windows\""],"authorization":["Bearer 42|4JrEhMgLQ0Ift5t9dcXMDBm8dFtgTFEX7dxAfXToaa10aac0"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"],"accept":["application/json, text/plain, */*"],"sec-ch-ua":["\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""],"sec-ch-ua-mobile":["?0"],"origin":["http://localhost:4200"],"sec-fetch-site":["cross-site"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http://localhost:4200/"],"accept-encoding":["gzip, deflate, br, zstd"],"accept-language":["fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7"]} 
 [2025-01-10 14:18:46] local.INFO: Utilisateur authentifié : {"user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 14:45:13] local.INFO: Headers reçus : {"host":["127.0.0.1:8000"],"connection":["keep-alive"],"sec-ch-ua-platform":["\"Windows\""],"authorization":["Bearer 43|ljpPby2cZSV46Rqa6jz6RgnCYjfPRDQXBHGEEZ7Y698f2670"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"],"accept":["application/json, text/plain, */*"],"sec-ch-ua":["\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""],"sec-ch-ua-mobile":["?0"],"origin":["http://localhost:4200"],"sec-fetch-site":["cross-site"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http://localhost:4200/"],"accept-encoding":["gzip, deflate, br, zstd"],"accept-language":["fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,ar;q=0.6"]} 
+[2025-01-10 14:45:13] local.INFO: Utilisateur authentifié : {"user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 14:45:13] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 14:45:13] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 14:45:13] local.INFO: Headers reçus : {"host":["127.0.0.1:8000"],"connection":["keep-alive"],"sec-ch-ua-platform":["\"Windows\""],"authorization":["Bearer 43|ljpPby2cZSV46Rqa6jz6RgnCYjfPRDQXBHGEEZ7Y698f2670"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"],"accept":["application/json, text/plain, */*"],"sec-ch-ua":["\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""],"sec-ch-ua-mobile":["?0"],"origin":["http://localhost:4200"],"sec-fetch-site":["cross-site"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http://localhost:4200/"],"accept-encoding":["gzip, deflate, br, zstd"],"accept-language":["fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,ar;q=0.6"]} 
+[2025-01-10 14:45:13] local.INFO: Utilisateur authentifié : {"user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
