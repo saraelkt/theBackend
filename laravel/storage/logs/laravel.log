@@ -5110,3 +5110,197 @@ Depression is a complex condition, but it is treatable. With the right support, 
 
 
 By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 22:16:14] local.INFO: Requête show reçue pour l'article : {"id":"5","user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 22:16:14] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":5,"title":"New Article Title","content":"This is the content of the new article.","category":"Anxiety","image_path":"test_image.png","created_at":"2025-01-09T14:16:23.000000Z","updated_at":"2025-01-09T14:16:23.000000Z","author":"Safae Nagbi","published_at":"2025-01-09 14:16:23","likes":0,"comments_count":0,"user_id":3,"user":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}}} 
+[2025-01-10 22:16:19] local.INFO: Requête show reçue pour l'article : {"id":"21","user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 22:16:19] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":21,"title":"Stress","content":"the impact of stree","category":"Anxiety","image_path":"publicmentalhealth.jpg","created_at":"2025-01-10T19:45:51.000000Z","updated_at":"2025-01-10T19:45:51.000000Z","author":"Safae Nagbi","published_at":"2025-01-10 00:00:00","likes":0,"comments_count":0,"user_id":3,"user":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}}} 
+[2025-01-10 22:16:25] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-09T22:26:36.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 22:16:25] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 22:24:50] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":4,"name":"Rania","email":"rania.ng@gmail.com","email_verified_at":null,"created_at":"2025-01-10T14:47:32.000000Z","updated_at":"2025-01-10T14:49:00.000000Z","bio":"I like to write about mental health ...","image":"images.jpeg"}}} 
+[2025-01-10 22:24:50] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 22:32:12] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":4,"name":"Rania","email":"rania.ng@gmail.com","email_verified_at":null,"created_at":"2025-01-10T14:47:32.000000Z","updated_at":"2025-01-10T22:31:15.000000Z","bio":"I like to write about mental health ...","image":"images.jpeg"}}} 
+[2025-01-10 22:32:12] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 22:32:24] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":4,"name":"Rania","email":"rania.ng@gmail.com","email_verified_at":null,"created_at":"2025-01-10T14:47:32.000000Z","updated_at":"2025-01-10T22:31:15.000000Z","bio":"I like to write about mental health ...","image":"images.jpeg"}}} 
+[2025-01-10 22:32:24] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
+[2025-01-10 22:32:51] local.INFO: Requête show reçue pour l'article : {"id":"2","user":{"App\\Models\\User":{"id":3,"name":"Safae Nagbi","email":"safae.nagbi@example.com","email_verified_at":null,"created_at":"2025-01-07T23:56:14.000000Z","updated_at":"2025-01-10T22:22:19.000000Z","bio":"Hello! It's Safae... whatever","image":"safae2.jpg"}}} 
+[2025-01-10 22:32:51] local.INFO: Article trouvé : {"article":{"App\\Models\\Article":{"id":2,"title":"Understanding Depression","content":"Depression is a multifaceted mental health condition that affects millions globally. Unlike occasional sadness, depression is a persistent and pervasive sense of hopelessness that can disrupt every aspect of life, including work, relationships, and physical health. It is more than just feeling low; it is a clinical condition that requires attention and care.
+
+
+
+The symptoms of depression include a lack of energy, loss of interest in previously enjoyable activities, changes in appetite and sleep patterns, difficulty concentrating, and feelings of guilt or worthlessness. In severe cases, individuals may experience thoughts of self-harm or suicide. It is important to recognize these signs and seek help promptly.
+
+
+
+Depression does not have a single cause. It often results from a combination of genetic, biological, environmental, and psychological factors. For some, a family history of depression increases their likelihood of developing the condition. For others, significant life changes, trauma, or chronic stress can trigger depressive episodes.
+
+
+
+Biologically, depression has been linked to imbalances in brain chemicals, such as serotonin and dopamine. These neurotransmitters play a key role in regulating mood. Advances in neuroimaging have also revealed that depression can alter the structure and function of certain brain areas, including the prefrontal cortex and hippocampus.
+
+
+
+Treatment for depression is highly individualized, as what works for one person may not work for another. Psychotherapy, especially cognitive-behavioral therapy (CBT) and interpersonal therapy, has been shown to be highly effective. These therapies help individuals identify negative thought patterns and develop healthier ways to cope with challenges.
+
+
+
+Medications, such as antidepressants, are another common treatment. They help correct chemical imbalances in the brain and are often used in conjunction with therapy. For individuals with treatment-resistant depression, innovative approaches like transcranial magnetic stimulation (TMS) or ketamine infusions are emerging as promising options.
+
+
+
+Lifestyle changes also play a vital role in managing depression. Regular exercise, a balanced diet, and sufficient sleep can improve mood and energy levels. Mindfulness practices, such as meditation and yoga, have also been shown to reduce symptoms of depression.
+
+
+
+Support from loved ones can make a significant difference. Open conversations about mental health can break down the stigma and encourage those struggling to seek help. Online and in-person support groups provide a safe space for individuals to share their experiences and feel less alone.
+
+
+
+Depression is a complex condition, but it is treatable. With the right support, individuals can recover and lead fulfilling lives. If you or someone you know is experiencing symptoms of depression, do not hesitate to reach out to a healthcare provider. Early intervention can change the course of the illness and bring hope for a brighter future.
+
+
+
+By addressing depression, we not only help individuals but also strengthen our communities. Mental health is a collective responsibility, and fostering an environment of understanding and compassion benefits everyone. Together, we can create a world where no one has to face depression alone.","category":"Depression","image_path":"img1.png","created_at":"2025-01-07T10:09:16.000000Z","updated_at":"2025-01-07T10:09:16.000000Z","author":"Sara El khayat","published_at":"2025-01-08 11:31:43","likes":0,"comments_count":0,"user_id":2,"user":{"id":2,"name":"Sarah elkt","email":"sarahelkt@example.com","email_verified_at":null,"created_at":"2025-01-07T23:37:52.000000Z","updated_at":"2025-01-07T23:37:52.000000Z","bio":"Hello! I'm Sara and I'm passionate about human mental health.","image":"sara.png"}}}} 
