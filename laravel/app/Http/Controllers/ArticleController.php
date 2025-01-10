@@ -12,7 +12,9 @@ class ArticleController extends Controller
    {
        $articles = Article::all();
        $articles->map(function ($article) {
-        $article->image_url = url('storage/' . $article->image_path);
+        $article->image_url = $article->image_path
+                ? url('storage/' . $article->image_path)
+                : url('https://via.placeholder.com/150'); // Utiliser une image par défaut si aucune image
         return $article;
     }); // Récupère tous les articles
        return response()->json($articles, 200); // Retourne les articles en JSON
@@ -41,7 +43,14 @@ class ArticleController extends Controller
        
     
         if ($request->hasFile('image_path')) {
-            $validatedData['image_path'] = $request->file('image_path')->store('articles', 'public');
+            // Conserver le nom original du fichier pour plus de lisibilité
+            $originalName = $request->file('image_path')->getClientOriginalName();
+
+            // Déplacer le fichier dans "public/storage"
+            $request->file('image_path')->move(public_path('storage'), $originalName);
+
+            // Stocker uniquement le nom du fichier dans la base de données
+            $validatedData['image_path'] = $originalName;
         }
         
     
@@ -114,6 +123,11 @@ class ArticleController extends Controller
        if (!$article) {
            return response()->json(['message' => 'Article not found'], 404);
        }
+
+       // Supprimer l'image associée si elle existe
+       if ($article->image_path && file_exists(public_path('storage/' . $article->image_path))) {
+        unlink(public_path('storage/' . $article->image_path)); // Supprime le fichier
+    }
 
        $article->delete(); // Supprime l'article
 
