@@ -50,6 +50,21 @@ private function formatReplies($replies, $userId)
 {
     try {
         \Log::info('Received data:', $request->all()); // Log les données reçues
+        $inappropriateWords = [
+            'suicide', 'rape', 'murder', 'violence', 'terrorism', 'hate', 
+            'kill', 'bomb', 'drugs', 'pornography', 'pedophile', 'molestation', 
+            'abuse', 'torture', 'racist', 'nazi', 'genocide', 'isis', 'terrorist',
+            'death', 'harm', 'weapon', 'bombing', 'execution', 'slavery',
+            'terrorist attack', 'child abuse', 'sexual assault', 'sexual harassment', 
+            'self-harm'
+        ];
+        foreach ($inappropriateWords as $word) {
+            if (stripos($request->content, $word) !== false) {
+                return response()->json([
+                    'message' => 'Contenu inapproprié détecté dans le commentaire, ne peut pas être publié.'
+                ], 422); // Erreur 422 - Contenu inapproprié
+            }
+        }
         $validatedData = $request->validate([
             'article_id' => 'required|exists:articles,id',
             'content' => 'required|string|min:1',
