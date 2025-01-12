@@ -67,8 +67,8 @@ class ArticleController extends Controller
     public function show($id)
     {
         \Log::info('Requête show reçue pour l\'article :', ['id' => $id, 'user' => auth()->user()]);
-    
-        $article = Article::with('user')->find($id);
+        $user = auth()->user(); // Utilisateur connecté
+        $article = Article::with('user', 'comments')->find($id);
     
         if (!$article) {
             \Log::error('Article non trouvé :', ['id' => $id]);
@@ -76,7 +76,10 @@ class ArticleController extends Controller
         }
     
         \Log::info('Article trouvé :', ['article' => $article]);
-    
+
+        $article->comments_count = $article->comments()->count(); // Total des commentaires
+        $article->userLiked = $article->likedBy()->where('user_id', $user->id)->exists(); // Si l'utilisateur a liké
+        
         return response()->json($article, 200);
     }
       
@@ -133,4 +136,38 @@ class ArticleController extends Controller
 
        return response()->json(['message' => 'Article deleted successfully'], 200);
    }
+
+   public function toggleLike($id)
+{
+    $user = auth()->user();
+    $article = Article::find($id);
+
+    if (!$article) {
+        return response()->json(['error' => 'Article not found'], 404);
+    }
+
+    // Vérifier si l'utilisateur a déjà liké cet article
+    $alreadyLiked = $article->likedBy()->where('user_id', $user->id)->exists();
+
+    if ($alreadyLiked) {
+        $article->likedBy()->detach($user->id);
+        $article->likes -= 1;
+        $article->save();
+        return response()->json([
+            'liked' => false,
+            'likes' => $article->likes,
+        ]);
+    }
+
+    // Si pas encore liké, ajouter un like
+    $article->likedBy()->attach($user->id);
+    $article->likes += 1;
+    $article->save();
+
+    return response()->json([
+        'liked' => true,
+        'likes' => $article->likes,
+    ]);
+}
+
 }
