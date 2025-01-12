@@ -51,4 +51,16 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+     // Relation avec les commentaires
+     public function comments()
+     {
+         return $this->hasMany(Comment::class);
+     }
+     public function likedComments()
+    {
+        return $this->belongsToMany(Comment::class, 'comment_user_likes')
+            ->withTimestamps(); // Relation avec les commentaires likés
+    }
+
 }
