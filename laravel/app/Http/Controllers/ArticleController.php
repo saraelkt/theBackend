@@ -25,7 +25,14 @@ class ArticleController extends Controller
     */
     public function store(Request $request)
     {
-        
+        $inappropriateWords = [
+            'suicide', 'rape', 'murder', 'violence', 'terrorism', 'hate', 
+            'kill', 'bomb', 'drugs', 'pornography', 'pedophile', 'molestation', 
+            'abuse', 'torture', 'racist', 'nazi', 'genocide', 'isis', 'terrorist',
+            'death', 'harm', 'weapon', 'bombing', 'execution', 'slavery',
+            'terrorist attack', 'child abuse', 'sexual assault', 'sexual harassment', 
+            'self-harm'
+        ];  
         $validatedData = $request->validate([
             
             'title' => 'required|max:255|nullable',
@@ -40,7 +47,21 @@ class ArticleController extends Controller
         if ($user) {
             $validatedData['author'] = $user->name; // Remplit automatiquement le champ `author`
         }
-       
+        foreach ($inappropriateWords as $word) {
+            if (stripos($request->content, $word) !== false) {
+                return response()->json([
+                    'message' => 'Contenu inapproprié détecté dans l\'article, ne peut pas être publié.'
+                ], 422); // Erreur 422 - Contenu inapproprié
+            }
+        }
+        foreach ($inappropriateWords as $word) {
+            if (stripos($request->title, $word) !== false) {
+                return response()->json([
+                    'message' => 'Contenu inapproprié détecté dans l\'article, ne peut pas être publié.'
+                ], 422); // Erreur 422 - Contenu inapproprié
+            }
+        }
+    
     
         if ($request->hasFile('image_path')) {
             // Conserver le nom original du fichier pour plus de lisibilité
