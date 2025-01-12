@@ -25,4 +25,15 @@ class Article extends Model
     public function user() {
         return $this->belongsTo(User::class);
     }
+
+    public function likedBy()
+    {
+        return $this->belongsToMany(User::class, 'article_user_likes');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
 }

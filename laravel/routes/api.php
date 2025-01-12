@@ -24,9 +24,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/articles/{id}/comments', [CommentController::class, 'index']);
     Route::post('/comments', [CommentController::class, 'store']); // Créer un commentaire
 
-Route::get('/user/{id}/profile-with-articles', [UserController::class, 'getProfileWithArticles']);
-Route::put('/user/{id}/update-profile', [UserController::class, 'updateProfile']);
-Route::post('/user/{id}/update-profile-image', [UserController::class, 'updateProfileImage'])->name('user.updateProfileImage');
+    Route::get('/user/{id}/profile-with-articles', [UserController::class, 'getProfileWithArticles']);
+    Route::put('/user/{id}/update-profile', [UserController::class, 'updateProfile']);
+    Route::post('/user/{id}/update-profile-image', [UserController::class, 'updateProfileImage'])->name('user.updateProfileImage');
 
    Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store');
  
@@ -44,4 +44,5 @@ Route::post('/user/{id}/update-profile-image', [UserController::class, 'updatePr
     // Déconnexion
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::post('/comments/{commentId}/like', [CommentController::class, 'toggleLike']);
+    Route::post('/articles/{id}/like', [ArticleController::class, 'toggleLike']);
 });
